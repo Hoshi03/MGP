@@ -14,6 +14,8 @@ import com.example.MGP.R;
 public class PuzzleActivityNBoss extends AppCompatActivity {
 // 2-보스 스테이지
 
+    static int life = 3;
+
     ImageButton[] blanks = new ImageButton[2];
     ImageButton[] quizzes = new ImageButton[10];
     int temp = 0;   //버튼이 눌려 입력된 문자의 수를 감지하기 위한 변수
@@ -66,6 +68,11 @@ public class PuzzleActivityNBoss extends AppCompatActivity {
                     else {
                         if (answer.length() >= 2){
                             answer = "";
+                            life --;
+                            if (life <= 0){
+                                Intent intent = new Intent(PuzzleActivityNBoss.this, StartActivity.class);
+                                startActivity(intent);
+                            }
                             blanks[0].setImageResource(R.drawable.tutorial_answer1);
                             blanks[1].setImageResource(R.drawable.tutorial_answer1);
                             temp = 0;   //입력된 문자의 수 초기화

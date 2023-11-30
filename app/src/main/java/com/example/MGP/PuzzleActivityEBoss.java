@@ -14,6 +14,8 @@ import com.example.MGP.R;
 public class PuzzleActivityEBoss extends AppCompatActivity {
 // 1-보스 스테이지
 
+    static int life = 3;
+
     ImageButton[] blanks = new ImageButton[3];
     ImageButton[] quizzes = new ImageButton[9];
     int temp = 0;   //버튼이 눌려 입력된 문자의 수를 감지하기 위한 변수
@@ -63,6 +65,11 @@ public class PuzzleActivityEBoss extends AppCompatActivity {
                         //정답을 맞추지 못했으면 문자열 길이가 3 넘는지 확인, 넘는다면 빈칸 비우기
                     else {
                         if (answer.length() >= 3){
+                            life --;
+                            if (life <= 0){
+                                Intent intent = new Intent(PuzzleActivityEBoss.this, StartActivity.class);
+                                startActivity(intent);
+                            }
                             answer = "";
                             blanks[0].setImageResource(R.drawable.tutorial_answer1);
                             blanks[1].setImageResource(R.drawable.tutorial_answer1);

@@ -6,23 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".PuzzleActivityHBoss">
 
-    <!-- 배경 이미지를 위한 ImageView 추가 -->
-
-    <!--    <androidx.constraintlayout.widget.Group-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:visibility="visible"-->
-    <!--        app:constraint_referenced_ids="stage1_quiz1, stage1_quiz2, -->
-    <!--        stage1_quiz3, stage1_quiz4, stage1_quiz5" />-->
-
 
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="fitXY"
         android:src="@drawable/boss3_bg"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-27dp" />
+        tools:layout_editor_absoluteX="361dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+
+    <ImageView
+        android:layout_width="186dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/zakum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
 
     <ImageButton
         android:id="@+id/boss3_quiz1"

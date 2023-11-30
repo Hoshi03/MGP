@@ -18,6 +18,8 @@ public class PuzzleActivityHBoss extends AppCompatActivity {
     ImageButton[] quizzes = new ImageButton[10];
     int temp = 0;   //버튼이 눌려 입력된 문자의 수를 감지하기 위한 변수
 
+    static int life = 3;
+
     String answer = "";
 
     @Override
@@ -67,6 +69,11 @@ public class PuzzleActivityHBoss extends AppCompatActivity {
                     else {
                         if (answer.length() >= 3){
                             answer = "";
+                            life --;
+                            if (life <= 0){
+                                Intent intent = new Intent(PuzzleActivityHBoss.this, StartActivity.class);
+                                startActivity(intent);
+                            }
                             blanks[0].setImageResource(R.drawable.tutorial_answer1);
                             blanks[1].setImageResource(R.drawable.tutorial_answer1);
                             blanks[2].setImageResource(R.drawable.tutorial_answer1);
