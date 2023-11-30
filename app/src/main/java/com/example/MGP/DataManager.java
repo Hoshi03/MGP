@@ -4,7 +4,7 @@ public class DataManager {
 
     private static DataManager instance;
     private boolean isButtonClickable;
-    private int lifeCount;
+    private int bossCount = 0;
 
     private DataManager() {
     }
@@ -22,5 +22,13 @@ public class DataManager {
 
     public void setButtonClickable(boolean value) {
         isButtonClickable = value;
+    }
+
+    public int getBossCount(){
+        return bossCount;
+    }
+
+    public void setBossCount(){
+        bossCount++;
     }
 }

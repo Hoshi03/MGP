@@ -60,7 +60,8 @@ public class PuzzleActivityNBoss extends AppCompatActivity {
                     //일단 토스트 메세지를 보내지만 나중에는 클리어시 조건으로 바꿀 예정입니다
                     //버튼이 눌리고 변경된 정답 문자열을 진짜 정답과 비교, 맞으면 토스트 메세지 전달
                     if(answer.equals("인과")) {
-                        Intent intent = new Intent(PuzzleActivityNBoss.this, PuzzleActivityH1.class);
+                        DataManager.getInstance().setBossCount();
+                        Intent intent = new Intent(PuzzleActivityNBoss.this, ClearActivity.class);
                         startActivity(intent);
                     }
 

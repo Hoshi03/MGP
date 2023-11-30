@@ -36,6 +36,12 @@
             android:screenOrientation="landscape"/>
 
         <activity
+            android:name=".ClearActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Hello2019026380"
+            android:screenOrientation="landscape"/>
+
+        <activity
             android:name=".PuzzleActivity"
             android:exported="false"
             android:label="@string/title_activity_puzzle"
