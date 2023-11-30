@@ -1,0 +1,2 @@
+public class PuzzleActivityN1 {
+}

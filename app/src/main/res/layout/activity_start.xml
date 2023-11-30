@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity">
+
+    <!-- 배경 이미지를 위한 ImageView 추가 -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/logo_bg"
+        android:scaleType="fitXY" />
+
+    <!-- 시작 화면에 "Start Game" 버튼 추가 -->
+
+    <ImageButton
+        android:id="@+id/startGameButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="-160dp"
+        android:layout_marginTop="-50dp"
+        android:layout_marginRight="164dp"
+        android:layout_marginBottom="127dp"
+        android:background="@drawable/logo_button1" />
+
+    <ImageButton
+        android:id="@+id/stageButton"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginLeft="-160dp"
+        android:layout_marginTop="-50dp"
+        android:layout_marginRight="176dp"
+        android:layout_marginBottom="68dp"
+        android:background="@drawable/logo_button2" />
+
+    <ImageButton
+        android:id="@+id/creditButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginLeft="-160dp"
+        android:layout_marginTop="-50dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/logo_button3" />
+
+</RelativeLayout>
