@@ -72,6 +72,7 @@ public class StageSelector extends AppCompatActivity {
         });
     }
 
+
     // 특정 이벤트나 조건 발생 시 호출되는 메서드
     private void changeMusic(int musicResourceId) {
         // 다른 음악 파일로 BackgroundMusicService 호출

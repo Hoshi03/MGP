@@ -63,6 +63,7 @@ public class PuzzleActivityH1 extends AppCompatActivity {
                     else {
                         if (answer.length() >= 2){
                             answer = "";
+                            Toast.makeText(PuzzleActivityH1.this, "첫글자 : 연", Toast.LENGTH_LONG).show();
                             blanks[0].setImageResource(R.drawable.tutorial_answer1);
                             blanks[1].setImageResource(R.drawable.tutorial_answer1);
                             temp = 0;   //입력된 문자의 수 초기화

@@ -66,6 +66,8 @@ public class PuzzleActivityH4 extends AppCompatActivity {
                         //정답을 맞추지 못했으면 문자열 길이가 3 넘는지 확인, 넘는다면 빈칸 비우기
                     else {
                         if (answer.length() >= 2){
+                            Toast.makeText(PuzzleActivityH4.this, "첫글자 : 작", Toast.LENGTH_LONG).show();
+                            
                             answer = "";
                             blanks[0].setImageResource(R.drawable.tutorial_answer1);
                             blanks[1].setImageResource(R.drawable.tutorial_answer1);

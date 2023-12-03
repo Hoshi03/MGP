@@ -69,6 +69,7 @@ public class PuzzleActivityHBoss extends AppCompatActivity {
                         //정답을 맞추지 못했으면 문자열 길이가 3 넘는지 확인, 넘는다면 빈칸 비우기
                     else {
                         if (answer.length() >= 3){
+                            Toast.makeText(PuzzleActivityHBoss.this, "첫글자 : 딥", Toast.LENGTH_LONG).show();
                             answer = "";
                             life --;
                             if (life <= 0){

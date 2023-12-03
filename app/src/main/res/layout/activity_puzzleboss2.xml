@@ -27,13 +27,12 @@
 
 
     <ImageView
-        android:layout_width="160dp"
-        android:layout_height="85dp"
-        android:scaleType="fitXY"
-        android:layout_marginTop="4dp"
-        android:src="@drawable/zakum"
+        android:layout_width="150dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="-11dp"
+        android:src="@drawable/boss2_button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintHorizontal_bias="0.518"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView1" />
 

@@ -77,6 +77,8 @@ public class PuzzleActivityTutorial extends AppCompatActivity {
         }
     }
 
+
+
     private int getResourceIdFromButton(ImageButton button) { //눌린 버튼의 낱말을 정답 문자열에 추가 + 문장 빈칸에 띄우기
         int id = button.getId();
         if (id == R.id.stage1_quiz1) {
@@ -101,6 +103,7 @@ public class PuzzleActivityTutorial extends AppCompatActivity {
         }
         else return R.drawable.stage1_answer1;
     }
+
 
     private void changeMusic() {
         // 다른 음악 파일로 BackgroundMusicService 호출

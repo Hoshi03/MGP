@@ -26,11 +26,10 @@
         tools:layout_editor_absoluteY="0dp" />
 
     <ImageView
-        android:layout_width="160dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="4dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/zakum"
+        android:layout_width="150dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="-11dp"
+        android:src="@drawable/boss1_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
